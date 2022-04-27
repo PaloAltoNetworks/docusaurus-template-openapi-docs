@@ -5,15 +5,16 @@ This template is built for [Docusaurus 2](https://docusaurus.io/), a modern stat
 ### Usage
 
 ```bash
-npx create-docusaurus@2.0.0-beta.18 my-website --package-manager yarn
+npx create-docusaurus@2.0.0-beta.18 my-website "Git repository" --package-manager yarn
 ```
 
 This will trigger a wizard that will step you through selecting your template.
 
 When prompted:
-* Ok to proceed? (y)
-* Select a template below: (Git repository)
-* Enter a repository URL: `https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git`
+* Enter a repository URL:
+```bash
+https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git
+```
 * How should we clone this repo? Copy: do a shallow clone, but do not create a git repo
 
 Example output:
@@ -22,7 +23,6 @@ Example output:
 Need to install the following packages:
   create-docusaurus@2.0.0-beta.18
 Ok to proceed? (y) 
-✔ Select a template below... › Git repository
 ✔ Enter a repository URL from GitHub, Bitbucket, GitLab, or any other public repo.
 (e.g: https://github.com/ownerName/repoName.git) … https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git
 ✔ How should we clone this repo? › Copy: do a shallow clone, but do not create a git repo
