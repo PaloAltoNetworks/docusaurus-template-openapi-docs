@@ -1,41 +1,48 @@
-# Website
+# Template
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This template is built for [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+### Usage
 
+```bash
+npx create-docusaurus@2.0.0-beta.18 my-website --package-manager yarn
 ```
-$ yarn
+
+This will trigger a wizard that will step you through selecting your template.
+
+When prompted:
+* Ok to proceed? (y)
+* Select a template below: (Git repository)
+* Enter a repository URL: `https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git`
+* How should we clone this repo? Copy: do a shallow clone, but do not create a git repo
+
+Example output:
+
+```bash
+Need to install the following packages:
+  create-docusaurus@2.0.0-beta.18
+Ok to proceed? (y) 
+✔ Select a template below... › Git repository
+✔ Enter a repository URL from GitHub, Bitbucket, GitLab, or any other public repo.
+(e.g: https://github.com/ownerName/repoName.git) … https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git
+✔ How should we clone this repo? › Copy: do a shallow clone, but do not create a git repo
+[INFO] Creating new Docusaurus project...
+[INFO] Cloning Git template https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs.git...
+
 ```
 
 ### Local Development
 
-```
-$ yarn start
+```bash
+yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
-```
-$ yarn build
+```bash
+yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
