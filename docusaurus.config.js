@@ -129,7 +129,7 @@ const config = {
 
   plugins: [
     [
-      "@paloaltonetworks/docusaurus-plugin-openapi",
+      "docusaurus-plugin-openapi-docs",
       {
         id: "openapi",
         config: {
@@ -145,7 +145,7 @@ const config = {
     ]
   ],
 
-  themes: ["@paloaltonetworks/docusaurus-theme-openapi"]
+  themes: ["docusaurus-theme-openapi-docs"]
 };
 
 module.exports = config;
