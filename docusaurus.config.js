@@ -137,7 +137,8 @@ const config = {
             specPath: "examples/petstore.yaml",
             outputDir: "docs/petstore",
             sidebarOptions: {
-              groupPathsBy: "tags"
+              groupPathsBy: "tags",
+              categoryLinkSource: "tag"
             }
           }
         }

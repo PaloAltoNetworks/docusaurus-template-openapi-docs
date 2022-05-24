@@ -1659,55 +1659,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paloaltonetworks/docusaurus-plugin-openapi@18.0.0-beta.2":
-  version "18.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@paloaltonetworks/docusaurus-plugin-openapi/-/docusaurus-plugin-openapi-18.0.0-beta.2.tgz#f1f09dc0525b69df3c99c92a24c799a014ec544a"
-  integrity sha512-2ggcric4YJGxLeVJEfmegfsMXuHmW3y8Vh76duII7Ci2O4pfM7bGUA9tM4kwwmcNyNREKTvPLZdewtcKCHgp6A==
-  dependencies:
-    "@docusaurus/mdx-loader" "2.0.0-beta.18"
-    "@docusaurus/plugin-content-docs" "2.0.0-beta.18"
-    "@docusaurus/utils" "2.0.0-beta.18"
-    "@docusaurus/utils-validation" "2.0.0-beta.18"
-    "@paloaltonetworks/openapi-to-postmanv2" "3.1.0-hotfix.1"
-    "@paloaltonetworks/postman-collection" "^4.1.0"
-    "@types/js-yaml" "^4.0.5"
-    "@types/mustache" "^4.1.2"
-    chalk "^4.1.2"
-    clsx "^1.1.1"
-    fs-extra "^9.0.1"
-    js-yaml "^4.1.0"
-    json-refs "^3.0.15"
-    json-schema-merge-allof "^0.8.1"
-    lodash "^4.17.20"
-    mustache "^4.2.0"
-    webpack "^5.61.0"
-
-"@paloaltonetworks/docusaurus-theme-openapi@18.0.0-beta.2":
-  version "18.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@paloaltonetworks/docusaurus-theme-openapi/-/docusaurus-theme-openapi-18.0.0-beta.2.tgz#0e92b67bbdd64a16b6601eacecb5c0ae265b868c"
-  integrity sha512-D7aXSbgEzibWiJp0EMszN27wh1FqORkFGW9SCVaSfgVfEW2Fmzj93Q2hOleyAxpAFgOvJJ7MzdGrH1x6dc4GQA==
-  dependencies:
-    "@docusaurus/theme-common" "2.0.0-beta.18"
-    "@mdx-js/react" "^1.6.21"
-    "@monaco-editor/react" "^4.3.1"
-    "@paloaltonetworks/docusaurus-plugin-openapi" "18.0.0-beta.2"
-    "@paloaltonetworks/postman-code-generators" "1.1.5-hotfix.5"
-    "@paloaltonetworks/postman-collection" "^4.1.0"
-    "@reduxjs/toolkit" "^1.7.1"
-    buffer "^6.0.3"
-    clsx "^1.1.1"
-    crypto-js "^4.1.1"
-    immer "^9.0.7"
-    lodash "^4.17.20"
-    monaco-editor "^0.31.1"
-    prism-react-renderer "^1.2.1"
-    process "^0.11.10"
-    react-magic-dropzone "^1.0.1"
-    react-markdown "^8.0.1"
-    react-redux "^7.2.0"
-    redux-devtools-extension "^2.13.8"
-    webpack "^5.61.0"
-
 "@paloaltonetworks/openapi-to-postmanv2@3.1.0-hotfix.1":
   version "3.1.0-hotfix.1"
   resolved "https://registry.yarnpkg.com/@paloaltonetworks/openapi-to-postmanv2/-/openapi-to-postmanv2-3.1.0-hotfix.1.tgz#4baf401d2e94ba86d888e6011a4c45d824e88114"
@@ -3631,6 +3582,55 @@ dns-packet@^5.2.2:
   integrity sha512-spBwIj0TK0Ey3666GwIdWVfUpLyubpU53BTCu8iPn4r4oXd9O14Hjg3EHw3ts2oed77/SeckunUYCyRlSngqHw==
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
+
+docusaurus-plugin-openapi-docs@1.0.2, docusaurus-plugin-openapi-docs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.0.2.tgz#bd97eee358b62913b8ac139fed18993cec2cbb80"
+  integrity sha512-KzPo32ecIbZCPIp86Hgqrk6A0Jj2Jr5FRBXuTqwIeJuNhkmLSuq/ud5piRkp+Y5rrOwOx0x5hZ4Hysi8bYKRsA==
+  dependencies:
+    "@docusaurus/mdx-loader" "2.0.0-beta.18"
+    "@docusaurus/plugin-content-docs" "2.0.0-beta.18"
+    "@docusaurus/utils" "2.0.0-beta.18"
+    "@docusaurus/utils-validation" "2.0.0-beta.18"
+    "@paloaltonetworks/openapi-to-postmanv2" "3.1.0-hotfix.1"
+    "@paloaltonetworks/postman-collection" "^4.1.0"
+    "@types/js-yaml" "^4.0.5"
+    "@types/mustache" "^4.1.2"
+    chalk "^4.1.2"
+    clsx "^1.1.1"
+    fs-extra "^9.0.1"
+    js-yaml "^4.1.0"
+    json-refs "^3.0.15"
+    json-schema-merge-allof "^0.8.1"
+    lodash "^4.17.20"
+    mustache "^4.2.0"
+    webpack "^5.61.0"
+
+docusaurus-theme-openapi-docs@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.0.2.tgz#6bf83081c494f6d620758bb1c561c07f22e4cfb7"
+  integrity sha512-ad/VE2+cwR6IDzjf635jFgASfZDZEqeZhwPXWu5FtaEBtYp1mArTrgqoVuenJAGM7BRdlu39DbwrGRh9NkezSA==
+  dependencies:
+    "@docusaurus/theme-common" "2.0.0-beta.18"
+    "@mdx-js/react" "^1.6.21"
+    "@monaco-editor/react" "^4.3.1"
+    "@paloaltonetworks/postman-code-generators" "1.1.5-hotfix.5"
+    "@paloaltonetworks/postman-collection" "^4.1.0"
+    "@reduxjs/toolkit" "^1.7.1"
+    buffer "^6.0.3"
+    clsx "^1.1.1"
+    crypto-js "^4.1.1"
+    docusaurus-plugin-openapi-docs "^1.0.2"
+    immer "^9.0.7"
+    lodash "^4.17.20"
+    monaco-editor "^0.31.1"
+    prism-react-renderer "^1.2.1"
+    process "^0.11.10"
+    react-magic-dropzone "^1.0.1"
+    react-markdown "^8.0.1"
+    react-redux "^7.2.0"
+    redux-devtools-extension "^2.13.8"
+    webpack "^5.61.0"
 
 dom-converter@^0.2.0:
   version "0.2.0"

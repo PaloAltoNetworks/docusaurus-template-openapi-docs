@@ -27,7 +27,7 @@ const sidebars = {
         slug: "/category/petstore-api"
       },
       // @ts-ignore
-      items: require("./docs/petstore/sidebar.js").sidebar
+      items: require("./docs/petstore/sidebar.js")
     }
   ]
 
