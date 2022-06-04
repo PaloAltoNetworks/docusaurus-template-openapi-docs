@@ -15,10 +15,6 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --openapi-code-green: var(--ifm-color-success) !important;
-  --openapi-code-orange: var(--ifm-color-warning) !important;
-  --openapi-code-red: var(--ifm-color-danger) !important;
-  --openapi-code-blue: var(--ifm-color-primary) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -57,12 +53,12 @@
 
 .get>.menu__link::before {
   content: "get";
-  background-color: var(--openapi-code-blue);
+  background-color: var(--ifm-color-primary);
 }
 
 .put>.menu__link::before {
   content: "put";
-  background-color: var(--openapi-code-orange);
+  background-color: var(--openapi-code-blue);
 }
 
 .post>.menu__link::before {
