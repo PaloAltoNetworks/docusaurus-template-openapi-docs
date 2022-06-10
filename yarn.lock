@@ -4393,10 +4393,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@1.0.3, docusaurus-plugin-openapi-docs@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.0.3.tgz#2cfdac55bbd95cab50e2a172b724b9ea0cd5a236"
-  integrity sha512-hOGAtaAYXgBO9BNqJ+o9M8LD1rdr/5kudF3Eo8BG7+2f7RYr0pIgw+GfYs5PcrKSg1rOH64eUdw9TYMjeXBiJg==
+docusaurus-plugin-openapi-docs@1.0.4, docusaurus-plugin-openapi-docs@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.0.4.tgz#f53a520838a517c3cfae0fd02f79a0a331aaeec1"
+  integrity sha512-viF3RxWuvaHjFYs78fLQwqIALkDY/0zV3kZYXkw70TGHY/28xzxeqyn5t3eQghfLVtVWUS3kaA/m8Gm3Vcjerg==
   dependencies:
     "@docusaurus/mdx-loader" "2.0.0-beta.21"
     "@docusaurus/plugin-content-docs" "2.0.0-beta.21"
@@ -4418,10 +4418,10 @@ docusaurus-plugin-openapi-docs@1.0.3, docusaurus-plugin-openapi-docs@^1.0.3:
     swagger2openapi "^7.0.8"
     webpack "^5.61.0"
 
-docusaurus-theme-openapi-docs@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.0.3.tgz#6ba83501103396b829c4c89af5c69cbb94cbe2f2"
-  integrity sha512-nqsW09wuO+99QVA9LdUyH7EuoxG+f8qPIZpfF5I3D58tOBiAr3ZRUzDE+/i9V6Ix2RGHNPw+KDoh66kpSsRZug==
+docusaurus-theme-openapi-docs@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.0.4.tgz#8411049afdbae24cef1ef50c2ddf353198b596fe"
+  integrity sha512-EqJLLnONIBkRS6z+iAb0YZw8wZXT+eUQ03hooITRSzK5VHT/HPjqEixsSJyq+DktQNznWZuHyyfVHOZJbvKbSg==
   dependencies:
     "@docusaurus/theme-common" "2.0.0-beta.21"
     "@mdx-js/react" "^1.6.21"
@@ -4432,7 +4432,7 @@ docusaurus-theme-openapi-docs@1.0.3:
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^1.0.3"
+    docusaurus-plugin-openapi-docs "^1.0.4"
     immer "^9.0.7"
     lodash "^4.17.20"
     monaco-editor "^0.31.1"
