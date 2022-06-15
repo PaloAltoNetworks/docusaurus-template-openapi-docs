@@ -50,6 +50,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true
+        }
+      },
       navbar: {
         title: "My Site",
         logo: {
@@ -132,7 +137,7 @@ const config = {
       "docusaurus-plugin-openapi-docs",
       {
         id: "openapi",
-        docPluginId: "classic",
+        docsPluginId: "classic",
         config: {
           petstore: {
             specPath: "examples/petstore.yaml",
