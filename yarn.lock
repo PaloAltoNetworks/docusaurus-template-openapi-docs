@@ -4691,10 +4691,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@1.1.1, docusaurus-plugin-openapi-docs@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.1.1.tgz#d355d708b606f10677418c88b8e9f92652a01933"
-  integrity sha512-6v+ycKMSPfp1Bw8kAxyCnNbd+6GsD9SH3uHn0/K2g5h0bK/DNzLAKtr1Vod3fK7/Yv1HPtRjepfWF2quu+j7mA==
+docusaurus-plugin-openapi-docs@1.1.2, docusaurus-plugin-openapi-docs@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.1.2.tgz#82772cac047854573b4a7c163ed01dec9f66e8a5"
+  integrity sha512-o6wMJ+av25uWKt2GMXLRkjODZanfxEA9dQSJWbY84KKdDZHwC+kDUfXkIqeBQpRU4bej24oi1P/1FS/VDDYmlQ==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@docusaurus/mdx-loader" "2.0.0-rc.1"
@@ -4718,10 +4718,10 @@ docusaurus-plugin-openapi-docs@1.1.1, docusaurus-plugin-openapi-docs@^1.1.1:
     url-template "^3.0.0"
     webpack "^5.61.0"
 
-docusaurus-theme-openapi-docs@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.1.1.tgz#bffd39d9ceadde5e1b938e0346e4c59c0e182bd5"
-  integrity sha512-9oqpQX8sVtPE5ns1GPyKYV72tpKHRXTHwiPqtSyukcs2gCAFCjpKhMKapqOgbnR+WtP6Wu7RwNQ5u80P7JLGzw==
+docusaurus-theme-openapi-docs@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.1.2.tgz#6049f9420dcd93f68a2d360567ac541ada534a30"
+  integrity sha512-QTco2DLTFZGQ2/voDtinbz/uwG2Cn3iQP0D2Kxxzwd/V34/3ppt5L1u6ygmzX+OIvPb/pPkMgPCheXbthxk19w==
   dependencies:
     "@docusaurus/theme-common" "2.0.0-rc.1"
     "@mdx-js/react" "^1.6.21"
@@ -4731,7 +4731,7 @@ docusaurus-theme-openapi-docs@1.1.1:
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^1.1.1"
+    docusaurus-plugin-openapi-docs "^1.1.2"
     immer "^9.0.7"
     lodash "^4.17.20"
     process "^0.11.10"
