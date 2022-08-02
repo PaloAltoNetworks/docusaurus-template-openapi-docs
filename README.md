@@ -5,7 +5,7 @@ This template is built for [Docusaurus 2](https://docusaurus.io/), a modern stat
 ### Usage
 
 ```bash
-npx create-docusaurus@2.0.0-rc.1 my-website --package-manager yarn
+npx create-docusaurus@2.0.1 my-website --package-manager yarn
 ```
 
 > When prompted to select a template choose `Git repository`.
