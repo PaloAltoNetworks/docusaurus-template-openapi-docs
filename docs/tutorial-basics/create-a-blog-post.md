@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+tags:
+  - test
 ---
 
 # Create a Blog Post

@@ -143,6 +143,8 @@ const config = {
           petstore: {
             specPath: "examples/petstore.yaml",
             outputDir: "docs/petstore",
+            downloadUrl:
+              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag"
