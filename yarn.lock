@@ -4694,10 +4694,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.4.0.tgz#906c687918953253160c3d58577581e2beab1ed7"
-  integrity sha512-Fd4Zh3Rr8Tn4njWe1cpJc+s5KPBEo0j/SNcO+sMti7yvQjKD0LbTcxH9Zm/sPQJ0uybws1kQ19PXIP5JefbroQ==
+docusaurus-plugin-openapi-docs@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.4.1.tgz#6eff86d5b9c3561db6ea8b5e0094279fd3d898ba"
+  integrity sha512-RCMmrY4ymWTXizwMO/fTidNM5gvkty5U0Hbq0VlHFobN1Zwr/QhbBVtArhTvVi4wjORtr+FeZUdNkqE6fQ9zUw==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@docusaurus/mdx-loader" "^2.0.1"
@@ -4722,10 +4722,10 @@ docusaurus-plugin-openapi-docs@^1.4.0:
     webpack "^5.61.0"
     xml-formatter "^2.6.1"
 
-docusaurus-theme-openapi-docs@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.4.0.tgz#5ff3a96ba627d188d8423e5169bfc3b3ecfb85c4"
-  integrity sha512-QHelNixy4SFy2x0x4vnXbzQOsepviq4yLg83MkIVDPytUCkKbwOXkYXSris3s7kJ28vtIjPV3BxJ+aSNGk564Q==
+docusaurus-theme-openapi-docs@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.4.1.tgz#86ccaa429fc1bac4cb3ac684a07913b0cc0b58e3"
+  integrity sha512-ETPkhAwMBGl/ZJeRAGDB0zfSLu9MeFvL83HeHOBA+e9anEpjCuMbbdXEWc3zNUCeME19JbAlmBSgXmbEzFiZmQ==
   dependencies:
     "@docusaurus/theme-common" "^2.0.1"
     "@mdx-js/react" "^1.6.21"
@@ -4735,7 +4735,7 @@ docusaurus-theme-openapi-docs@^1.4.0:
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^1.4.0"
+    docusaurus-plugin-openapi-docs "^1.4.1"
     file-saver "^2.0.5"
     immer "^9.0.7"
     lodash "^4.17.20"
