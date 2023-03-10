@@ -9,7 +9,7 @@ custom_edit_url: null
 ---
 
 import ApiLogo from "@theme/ApiLogo";
-import Tabs from "@theme/Tabs";
+import SchemaTabs from "@theme/SchemaTabs";
 import TabItem from "@theme/TabItem";
 import Export from "@theme/ApiDemoPanel/Export";
 
@@ -54,16 +54,16 @@ OAuth2 - an open protocol to allow secure authorization in a simple
 and standard method from web, mobile and desktop applications.
 
 
-<div style={{"marginBottom":"2rem"}}><h2 id={"authentication"} style={{"marginBottom":"1rem"}}>Authentication</h2><Tabs><TabItem label={"Petstore Auth"} value={"petstore_auth"}>
+<div style={{"marginBottom":"2rem"}}><h2 id={"authentication"} style={{"marginBottom":"1rem"}}>Authentication</h2><SchemaTabs className={"openapi-tabs__security-schemes"}><TabItem label={"OAuth 2.0: petstore_auth"} value={"petstore_auth"}>
 
 Get access to data while protecting your account credentials.
 OAuth2 is also a safer and more secure way to give you access.
 
 
-<div><table><tbody><tr><th>Security Scheme Type:</th><td>oauth2</td></tr><tr><th>implicit OAuth Flow:</th><td><p>Authorization URL: http://petstore.swagger.io/api/oauth/dialog</p><span>Scopes:</span><ul><li>write:pets: modify pets in your account</li><li>read:pets: read your pets</li></ul></td></tr></tbody></table></div></TabItem><TabItem label={"API Key"} value={"api_key"}>
+<div><table><tbody><tr><th>Security Scheme Type:</th><td>oauth2</td></tr><tr><th>OAuth Flow (implicit):</th><td><p>Authorization URL: http://petstore.swagger.io/api/oauth/dialog</p><span>Scopes:</span><ul><li>write:pets: modify pets in your account</li><li>read:pets: read your pets</li></ul></td></tr></tbody></table></div></TabItem><TabItem label={"API Key: api_key"} value={"api_key"}>
 
 For this sample, you can use the api key `special-key` to test the authorization filters.
 
 
-<div><table><tbody><tr><th>Security Scheme Type:</th><td>apiKey</td></tr><tr><th>Header parameter name:</th><td>api_key</td></tr></tbody></table></div></TabItem></Tabs></div><div style={{"display":"flex","flexDirection":"column","marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>Contact</h3><span>API Support: <a href={"mailto:apiteam@swagger.io"}>apiteam@swagger.io</a></span><span>URL: <a href={"https://github.com/Redocly/redoc"}>https://github.com/Redocly/redoc</a></span></div><div style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>Terms of Service</h3><a href={"http://swagger.io/terms/"}>http://swagger.io/terms/</a></div><div style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>License</h3><a href={"http://www.apache.org/licenses/LICENSE-2.0.html"}>Apache 2.0</a></div>
+<div><table><tbody><tr><th>Security Scheme Type:</th><td>apiKey</td></tr><tr><th>Header parameter name:</th><td>api_key</td></tr></tbody></table></div></TabItem></SchemaTabs></div><div style={{"display":"flex","flexDirection":"column","marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>Contact</h3><span>API Support: <a href={"mailto:apiteam@swagger.io"}>apiteam@swagger.io</a></span><span>URL: <a href={"https://github.com/Redocly/redoc"}>https://github.com/Redocly/redoc</a></span></div><div style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>Terms of Service</h3><a href={"http://swagger.io/terms/"}>http://swagger.io/terms/</a></div><div style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}><h3 style={{"marginBottom":"0.25rem"}}>License</h3><a href={"http://www.apache.org/licenses/LICENSE-2.0.html"}>Apache 2.0</a></div>
       
