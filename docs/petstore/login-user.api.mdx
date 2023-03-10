@@ -12,21 +12,24 @@ custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiDemoPanel/MethodEndpoint";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
 import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Logs user into the system
+<h1 className={"openapi__heading"}>Logs user into the system</h1>
 
-<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"username","in":"query","description":"The user name for login","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"password","in":"query","description":"The password for login in clear text","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+<MethodEndpoint method={"get"} path={"/user/login"}></MethodEndpoint>
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"username","in":"query","description":"The user name for login","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"password","in":"query","description":"The password for login in clear text","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
 
 successful operation
 
-</div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}><li className={"schemaItem"}><summary style={{}}><strong>X-Rate-Limit</strong><span style={{"opacity":"0.6"}}> integer</span></summary><div><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+</div><details style={{"textAlign":"left","marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}><li className={"schemaItem"}><summary style={{}}><strong>X-Rate-Limit</strong><span style={{"opacity":"0.6"}}> integer</span></summary><div><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
 
 calls per hour allowed by the user
 
@@ -34,9 +37,9 @@ calls per hour allowed by the user
 
 date in UTC when token expires
 
-</div></div></li></ul></details><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Schema"} value={"Schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div><strong>string</strong></div></li></ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"OK"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem><TabItem label={"application/xml"} value={"application/xml"}><SchemaTabs><TabItem label={"Schema"} value={"Schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div><strong>string</strong></div></li></ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"<Message> OK </Message>"} language={"xml"}></ResponseSamples></TabItem></SchemaTabs></TabItem><TabItem label={"text/plain"} value={"text/plain"}><SchemaTabs><TabItem label={"Schema"} value={"Schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}>any</ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"OK"} language={"shell"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+</div></div></li></ul></details><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div><strong>string</strong></div></li></ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"OK"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem><TabItem label={"application/xml"} value={"application/xml"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div><strong>string</strong></div></li></ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"<Message> OK </Message>"} language={"xml"}></ResponseSamples></TabItem></SchemaTabs></TabItem><TabItem label={"text/plain"} value={"text/plain"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}>any</ul></details></TabItem><TabItem label={"response"} value={"response"}><ResponseSamples responseExample={"OK"} language={"shell"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
 
 Invalid username/password supplied
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

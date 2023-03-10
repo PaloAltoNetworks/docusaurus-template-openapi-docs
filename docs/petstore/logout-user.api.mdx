@@ -12,19 +12,22 @@ custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiDemoPanel/MethodEndpoint";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
 import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Logs out current logged in user session
+<h1 className={"openapi__heading"}>Logs out current logged in user session</h1>
 
-<div><ApiTabs><TabItem label={"default"} value={"default"}><div>
+<MethodEndpoint method={"get"} path={"/user/logout"}></MethodEndpoint>
+
+<div><div><ApiTabs><TabItem label={"default"} value={"default"}><div>
 
 successful operation
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

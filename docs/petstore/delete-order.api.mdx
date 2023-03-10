@@ -12,21 +12,24 @@ custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiDemoPanel/MethodEndpoint";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
 import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Delete purchase order by ID
+<h1 className={"openapi__heading"}>Delete purchase order by ID</h1>
+
+<MethodEndpoint method={"delete"} path={"/store/order/{orderId}"}></MethodEndpoint>
 
 
 
 For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors
 
-<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"orderId","in":"path","description":"ID of the order that needs to be deleted","required":true,"schema":{"type":"string","minimum":1}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"400"} value={"400"}><div>
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"orderId","in":"path","description":"ID of the order that needs to be deleted","required":true,"schema":{"type":"string","minimum":1}}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"400"} value={"400"}><div>
 
 Invalid ID supplied
 
@@ -34,5 +37,5 @@ Invalid ID supplied
 
 Order not found
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       

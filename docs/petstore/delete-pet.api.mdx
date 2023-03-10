@@ -12,19 +12,22 @@ custom_edit_url: null
 ---
 
 import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiDemoPanel/MethodEndpoint";
 import MimeTabs from "@theme/MimeTabs";
 import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
 import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
-import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Deletes a pet
+<h1 className={"openapi__heading"}>Deletes a pet</h1>
 
-<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"petId","in":"path","description":"Pet id to delete","required":true,"schema":{"type":"integer","format":"int64"}}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"api_key","in":"header","required":false,"schema":{"type":"string"},"example":"Bearer <TOKEN>"}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"400"} value={"400"}><div>
+<MethodEndpoint method={"delete"} path={"/pet/{petId}"}></MethodEndpoint>
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"petId","in":"path","description":"Pet id to delete","required":true,"schema":{"type":"integer","format":"int64"}}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"api_key","in":"header","required":false,"schema":{"type":"string"},"example":"Bearer <TOKEN>"}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"400"} value={"400"}><div>
 
 Invalid pet value
 
-</div><div></div></TabItem></ApiTabs></div>
+</div><div></div></TabItem></ApiTabs></div></div>
       
