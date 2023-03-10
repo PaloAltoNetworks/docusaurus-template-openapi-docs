@@ -134,7 +134,6 @@ const config = {
     }),
 
   plugins: [
-    "docusaurus-plugin-sass",
     [
       "docusaurus-plugin-openapi-docs",
       {

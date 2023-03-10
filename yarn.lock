@@ -3948,10 +3948,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@2.0.0-beta.0, docusaurus-plugin-openapi-docs@^2.0.0-beta.0:
-  version "2.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-2.0.0-beta.0.tgz#c03b229cb8aa2d88c2db09f31d3f0ab515e07a4e"
-  integrity sha512-fYLrjqXdF0F/udO3xNhwjJT3dfyZsmbiUFkVwOoQ5tQcMMktOz+6D6i6StqDDt0uKiSUMtKastOEiobGyKQ4cQ==
+docusaurus-plugin-openapi-docs@2.0.0-beta.1, docusaurus-plugin-openapi-docs@^2.0.0-beta.1:
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-2.0.0-beta.1.tgz#04d3c0c335ae3fb420e4ea62a8fb837ba89c6285"
+  integrity sha512-SM7u9HRy3SFJm65Mmb33RNBhkYpYzl0J43afBv/wRg3Z0AnlQSOmVVyxg2GoR4+PLPhFLhVoARuOXmqbjMdVPw==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@docusaurus/mdx-loader" "^2.3.0"
@@ -3983,10 +3983,10 @@ docusaurus-plugin-sass@^0.2.3:
   dependencies:
     sass-loader "^10.1.1"
 
-docusaurus-theme-openapi-docs@2.0.0-beta.0:
-  version "2.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-2.0.0-beta.0.tgz#db807361f12fcd0484cbbd9d42bcf15de96cd5fb"
-  integrity sha512-f6/WYSPYMuCsgRUCg229tKX4GX/tKeptLYvwjTa6rER7KOUUGQtCwehtmXFhuPpncJM7Kk7UwYTeZQF0pReoNg==
+docusaurus-theme-openapi-docs@2.0.0-beta.1:
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-2.0.0-beta.1.tgz#940ff8a099587bda6f43ac59e411228ca8a21793"
+  integrity sha512-704w8sHEZFXp2E2qYxcH1hX4Ys3I6iGDQZdv7BnnDmf/P2JHSw49V+CeekQhsXUe29maUfi43yJTG8HXPwwyyw==
   dependencies:
     "@docusaurus/theme-common" "^2.3.0"
     "@mdx-js/react" "^1.6.21"
@@ -3996,7 +3996,7 @@ docusaurus-theme-openapi-docs@2.0.0-beta.0:
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^2.0.0-beta.0"
+    docusaurus-plugin-openapi-docs "^2.0.0-beta.1"
     docusaurus-plugin-sass "^0.2.3"
     file-saver "^2.0.5"
     immer "^9.0.7"
