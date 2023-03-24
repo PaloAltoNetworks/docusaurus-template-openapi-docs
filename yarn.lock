@@ -1769,10 +1769,10 @@
     path-browserify "1.0.1"
     yaml "1.10.2"
 
-"@paloaltonetworks/postman-code-generators@^1.1.15":
-  version "1.1.15"
-  resolved "https://registry.yarnpkg.com/@paloaltonetworks/postman-code-generators/-/postman-code-generators-1.1.15.tgz#822eb45b538e47559ef2b6552223923cd8a62571"
-  integrity sha512-GVVqC+Uhe5Bt6VH/j26ooYZhv3lnrTdx59Fj3/DNeHV3aJAaWFtktu9pqj90nbxR56Sg/3CymaoZl/vyLiLJmg==
+"@paloaltonetworks/postman-code-generators@1.1.15-patch.2":
+  version "1.1.15-patch.2"
+  resolved "https://registry.yarnpkg.com/@paloaltonetworks/postman-code-generators/-/postman-code-generators-1.1.15-patch.2.tgz#012051485269a2da6bd9a6b60031ddbc53e5e363"
+  integrity sha512-tRnAKtV4M8wLxcVnAx6ZCjCqbrR1xiqJNQkf1A71K8UxEP3N/+EspT82N5c0555w02oYFk21ViHuzuhm4gaGLw==
   dependencies:
     "@paloaltonetworks/postman-collection" "^4.1.0"
     async "^3.2.4"
@@ -3935,10 +3935,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.6.1.tgz#3be6234c878aabafe5ebc65be3c234dbbf19e970"
-  integrity sha512-3zQ+s2pXXcSNLWzO39tkIAku8O5jysCQyIyaiK9mfxLMqQH8VBXge64wwVWlWYWtGzlEwNkeyu2fiFYOkfiifw==
+docusaurus-plugin-openapi-docs@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.7.0.tgz#fa5f1264c2e0ab5914e5d6ffcc246c31d9d30071"
+  integrity sha512-MrPnMieFGpV1ch3Som17tKSR3Vln6POudgiIv1OXBzO08BrzUJegamSqgWSUU2JkKQLEZGGnXJ+gsAbhlRfvTw==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@docusaurus/mdx-loader" ">=2.0.1 <2.3.0"
@@ -3963,20 +3963,20 @@ docusaurus-plugin-openapi-docs@^1.6.1:
     webpack "^5.61.0"
     xml-formatter "^2.6.1"
 
-docusaurus-theme-openapi-docs@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.6.1.tgz#0257298077786a44b6608f9be35121c5f0e4e7f1"
-  integrity sha512-NL5OBM/nLQaNktcIDGTax9UjCGen5uqVXVX64iro8vLIkMCotNIujL4WUKkNNyLiB4ktSWil/+4wB/b7WwN8Yw==
+docusaurus-theme-openapi-docs@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.7.0.tgz#8a940fac64f0dc2595e073a61c32114f738fb65e"
+  integrity sha512-rnrxzt9pc/aVWdIC7Bz3/8EHcZvDphZrvNHaA/Fhd37AcYkAlJlGX/5xIfC/96N/lSFqhSe4vsUn9ry3gi0jZg==
   dependencies:
     "@docusaurus/theme-common" ">=2.0.1 <2.3.0"
     "@mdx-js/react" "^1.6.21"
-    "@paloaltonetworks/postman-code-generators" "^1.1.15"
+    "@paloaltonetworks/postman-code-generators" "1.1.15-patch.2"
     "@paloaltonetworks/postman-collection" "^4.1.0"
     "@reduxjs/toolkit" "^1.7.1"
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^1.6.1"
+    docusaurus-plugin-openapi-docs "^1.7.0"
     file-saver "^2.0.5"
     immer "^9.0.7"
     lodash "^4.17.20"
