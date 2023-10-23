@@ -138,15 +138,16 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apidevtools/json-schema-ref-parser@^9.0.9":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@apidevtools/json-schema-ref-parser/-/json-schema-ref-parser-9.1.0.tgz#a28015be4693af1b02bb955eb2dc2f27918f0090"
-  integrity sha512-teB30tFooE3iQs2HQIKJ02D8UZA1Xy1zaczzhUjJs0CymYxeC0g+y5rCY2p8NHBM6DBUVoR8rSM4kHLj1WE9mQ==
+"@apidevtools/json-schema-ref-parser@^10.1.0":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@apidevtools/json-schema-ref-parser/-/json-schema-ref-parser-10.1.0.tgz#bf54494039a56fa7f77fed17dc6f01dfde50f64c"
+  integrity sha512-3e+viyMuXdrcK8v5pvP+SDoAQ77FH6OyRmuK48SZKmdHJRFm87RsSs8qm6kP39a/pOPURByJw+OXzQIqcfmKtA==
   dependencies:
     "@jsdevtools/ono" "^7.1.3"
-    "@types/json-schema" "^7.0.6"
-    call-me-maybe "^1.0.1"
+    "@types/json-schema" "^7.0.11"
+    "@types/lodash.clonedeep" "^4.5.7"
     js-yaml "^4.1.0"
+    lodash.clonedeep "^4.5.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.8.3":
   version "7.18.6"
@@ -1810,10 +1811,10 @@
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-"@redocly/openapi-core@^1.0.0-beta.103":
-  version "1.0.0-beta.115"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.0.0-beta.115.tgz#af27c495536aedf2c4027a0fae917ac0582e3bf4"
-  integrity sha512-knM3deYsnBMNnl+c2/vhg6UKA1n+77mxef3f4UNlZLyG0MHi/1NViKyUZdMstmmBInMamOkcZYy4EBh6q9H1aA==
+"@redocly/openapi-core@^1.0.0-beta.125":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.3.0.tgz#b47325d04c72d395ae3456b217799eb5850602aa"
+  integrity sha512-gpUu6bjveF9fuZF4iGdzHLMM3nH+AvtgWB84qPALyrE1Cf2qFed+0SW2cpg46VlgSykMekB86ivOIEqk5SlffA==
   dependencies:
     "@redocly/ajv" "^8.11.0"
     "@types/node" "^14.11.8"
@@ -2123,10 +2124,27 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
+"@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
+
+"@types/json-schema@^7.0.11":
+  version "7.0.14"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.14.tgz#74a97a5573980802f32c8e47b663530ab3b6b7d1"
+  integrity sha512-U3PUjAudAdJBeC2pgN8uTIKgxrb4nlDF3SF0++EldXQvQBGkpFZMSnwQiIoDU77tv45VgNkl/L4ouD+rEomujw==
+
+"@types/lodash.clonedeep@^4.5.7":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@types/lodash.clonedeep/-/lodash.clonedeep-4.5.8.tgz#016d5a0ef5714ee105b0aedd564e558bd7661fce"
+  integrity sha512-I5toZLLfTvhnuAnejjVgSpBSLSC316bVURbI0sCYI0dKY3jaJgOg2arfPC6miTNnHRi/Tk/J6BB+kzT3iB5mcw==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.200"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.200.tgz#435b6035c7eba9cdf1e039af8212c9e9281e7149"
+  integrity sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==
 
 "@types/mdast@^3.0.0":
   version "3.0.10"
@@ -3935,19 +3953,19 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.7.0.tgz#fa5f1264c2e0ab5914e5d6ffcc246c31d9d30071"
-  integrity sha512-MrPnMieFGpV1ch3Som17tKSR3Vln6POudgiIv1OXBzO08BrzUJegamSqgWSUU2JkKQLEZGGnXJ+gsAbhlRfvTw==
+docusaurus-plugin-openapi-docs@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-1.7.3.tgz#22533dd93c8aa4bf57fea00c959ecef56e744a73"
+  integrity sha512-h0SmUJJjjN1ewNDFcxXxGF41pg6aCm8GI0cMBBvlLcxmaFuKVkQ57w+cDyX2Ip+Vd0kPrgtcssfI0ujmYQjC2g==
   dependencies:
-    "@apidevtools/json-schema-ref-parser" "^9.0.9"
+    "@apidevtools/json-schema-ref-parser" "^10.1.0"
     "@docusaurus/mdx-loader" ">=2.0.1 <2.3.0"
     "@docusaurus/plugin-content-docs" ">=2.0.1 <2.3.0"
     "@docusaurus/utils" ">=2.0.1 <2.3.0"
     "@docusaurus/utils-validation" ">=2.0.1 <2.3.0"
     "@paloaltonetworks/openapi-to-postmanv2" "3.1.0-hotfix.1"
     "@paloaltonetworks/postman-collection" "^4.1.0"
-    "@redocly/openapi-core" "^1.0.0-beta.103"
+    "@redocly/openapi-core" "^1.0.0-beta.125"
     chalk "^4.1.2"
     clsx "^1.1.1"
     fs-extra "^9.0.1"
@@ -3963,10 +3981,10 @@ docusaurus-plugin-openapi-docs@^1.7.0:
     webpack "^5.61.0"
     xml-formatter "^2.6.1"
 
-docusaurus-theme-openapi-docs@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.7.0.tgz#8a940fac64f0dc2595e073a61c32114f738fb65e"
-  integrity sha512-rnrxzt9pc/aVWdIC7Bz3/8EHcZvDphZrvNHaA/Fhd37AcYkAlJlGX/5xIfC/96N/lSFqhSe4vsUn9ry3gi0jZg==
+docusaurus-theme-openapi-docs@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-1.7.3.tgz#3073e7e79dff52f7b88b5a45fe0f914dc9a71268"
+  integrity sha512-riLEj2tNGLDAMs0eMrStLoOSgsvpa0tmwzhIDYhETxZSBZ50Gd9sBPW58LRhuzQ5d9UZMTu6tg2swZiYQAlnag==
   dependencies:
     "@docusaurus/theme-common" ">=2.0.1 <2.3.0"
     "@mdx-js/react" "^1.6.21"
@@ -3976,7 +3994,7 @@ docusaurus-theme-openapi-docs@^1.7.0:
     buffer "^6.0.3"
     clsx "^1.1.1"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^1.7.0"
+    docusaurus-plugin-openapi-docs "^1.7.3"
     file-saver "^2.0.5"
     immer "^9.0.7"
     lodash "^4.17.20"
@@ -5840,6 +5858,11 @@ locate-path@^6.0.0:
   integrity sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
   dependencies:
     p-locate "^5.0.0"
+
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==
 
 lodash.curry@^4.0.1:
   version "4.1.1"
