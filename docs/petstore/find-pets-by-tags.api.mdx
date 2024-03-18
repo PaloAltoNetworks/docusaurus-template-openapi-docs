@@ -20,6 +20,8 @@ import ParamsItem from "@theme/ParamsItem";
 import ResponseSamples from "@theme/ResponseSamples";
 import SchemaItem from "@theme/SchemaItem";
 import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 
 <h1 className={"openapi__heading"}>Finds Pets by tags</h1>
@@ -36,7 +38,7 @@ Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3
 
 ## Request
 
-<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"tags","in":"query","description":"Tags to filter by","required":true,"style":"form","schema":{"type":"array","items":{"type":"string"}}}}></ParamsItem></ul></div></details><div><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Query Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"tags","in":"query","description":"Tags to filter by","required":true,"style":"form","schema":{"type":"array","items":{"type":"string"}}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
 
 successful operation
 
