@@ -1,11 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import type * as Plugin from "@docusaurus/types/src/plugin";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: "https://your-docusaurus-test-site.com",
@@ -22,15 +23,13 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebars.ts"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          docLayoutComponent: "@theme/DocPage",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
         blog: {
@@ -43,13 +42,12 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       docs: {
         sidebar: {
           hideable: true,
@@ -127,11 +125,67 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["ruby", "csharp", "php"],
+        prism: {
+          additionalLanguages: [
+            "ruby",
+            "csharp",
+            "php",
+            "java",
+            "powershell",
+            "json",
+            "bash",
+          ],
+        },
+        languageTabs: [
+          {
+            highlight: "python",
+            language: "python",
+            logoClass: "python",
+          },
+          {
+            highlight: "bash",
+            language: "curl",
+            logoClass: "bash",
+          },
+          {
+            highlight: "csharp",
+            language: "csharp",
+            logoClass: "csharp",
+          },
+          {
+            highlight: "go",
+            language: "go",
+            logoClass: "go",
+          },
+          {
+            highlight: "javascript",
+            language: "nodejs",
+            logoClass: "nodejs",
+          },
+          {
+            highlight: "ruby",
+            language: "ruby",
+            logoClass: "ruby",
+          },
+          {
+            highlight: "php",
+            language: "php",
+            logoClass: "php",
+          },
+          {
+            highlight: "java",
+            language: "java",
+            logoClass: "java",
+            variant: "unirest",
+          },
+          {
+            highlight: "powershell",
+            language: "powershell",
+            logoClass: "powershell",
+          },
+        ],
       },
-    }),
+    } satisfies Preset.ThemeConfig,
 
   plugins: [
     [
@@ -149,8 +203,8 @@ const config = {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
             },
-          },
-        },
+          } satisfies OpenApiPlugin.Options,
+        } satisfies Plugin.PluginOptions,
       },
     ],
   ],
@@ -158,4 +212,6 @@ const config = {
   themes: ["docusaurus-theme-openapi-docs"],
 };
 
-module.exports = config;
+export default async function createConfig() {
+  return config;
+}
