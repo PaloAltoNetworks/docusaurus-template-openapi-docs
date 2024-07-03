@@ -4,6 +4,8 @@ servers:
     description: Default server
   - url: https://petstore.swagger.io/sandbox
     description: Sandbox server
+  - url: http://127.0.0.1:4010
+    description: Prism Mock API (local)
 info:
   description: |
     This is a sample server Petstore server.
@@ -35,6 +37,7 @@ info:
     Petstore offers two forms of authentication:
       - API Key
       - OAuth2
+
     OAuth2 - an open protocol to allow secure authorization in a simple
     and standard method from web, mobile and desktop applications.
 
@@ -48,6 +51,9 @@ info:
   x-logo:
     url: "https://redocly.github.io/redoc/petstore-logo.png"
     altText: Petstore logo
+  x-dark-logo:
+    url: "/img/petstore-logo-dark.png"
+    altText: "Petstore dark logo"
   license:
     name: Apache 2.0
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -115,6 +121,13 @@ paths:
         - petstore_auth:
             - "write:pets"
             - "read:pets"
+        - api_key: []
+        - ApiKeyAuth: []
+        - BasicAuth: []
+        - BearerAuth: []
+        - OAuth2: []
+        - OpenID: []
+
       x-codeSamples:
         - lang: "C#"
           source: |
@@ -134,6 +147,7 @@ paths:
               Console.WriteLine(response.getRawResponse());
             }
         - lang: PHP
+          label: Custom
           source: |
             $form = new \PetStore\Entities\Pet();
             $form->setPetType("Dog");
@@ -204,6 +218,7 @@ paths:
             application/xml:
               schema:
                 $ref: "#/components/schemas/Pet"
+
         "400":
           description: Invalid ID supplied
         "404":
@@ -343,9 +358,7 @@ paths:
         "400":
           description: Invalid status value
       security:
-        - petstore_auth:
-            - "write:pets"
-            - "read:pets"
+        - api_key: []
   /pet/findByTags:
     get:
       tags:
@@ -434,6 +447,28 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/Order"
+            examples:
+              OrderDelivered:
+                summary: Order delivered
+                value:
+                  quantity: 4
+                  shipDate: 2022-10-12
+                  status: delivered
+                  requestId: 444-4444-444-4444
+              OrderPlaced:
+                summary: Order placed
+                value:
+                  quantity: 10
+                  shipDate: 2022-10-01
+                  status: placed
+                  requestId: 111-222-333-444
+              OrderApproved:
+                summary: Order approved
+                value:
+                  quantity: 1000
+                  shipDate: 2022-09-01
+                  status: approved
+                  requestId: 000-111-222-333
         description: order placed for purchasing the pet
         required: true
   "/store/order/{orderId}":
@@ -668,14 +703,7 @@ paths:
         orderShipped:
           "{$request.body#/callbackUrl}?event={$request.body#/eventName}":
             post:
-              description: |
-                Very long description
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+              description: A callback triggered every time an Order is shipped to the recipient
               requestBody:
                 content:
                   application/json:
@@ -906,7 +934,8 @@ components:
         message:
           type: string
     Cat:
-      title: cat
+      x-tags:
+        - pet
       description: A representation of a cat
       allOf:
         - $ref: "#/components/schemas/Pet"
@@ -945,7 +974,6 @@ components:
       xml:
         name: Category
     Dog:
-      title: dog
       description: A representation of a dog
       allOf:
         - $ref: "#/components/schemas/Pet"
@@ -960,7 +988,6 @@ components:
           required:
             - packSize
     HoneyBee:
-      title: bee
       description: A representation of a honey bee
       allOf:
         - $ref: "#/components/schemas/Pet"
@@ -971,6 +998,7 @@ components:
               description: Average amount of honey produced per day in ounces
               example: 3.14
               multipleOf: .01
+              default: 0
           required:
             - honeyPerDay
     Id:
@@ -1016,11 +1044,11 @@ components:
       xml:
         name: Order
     Pet:
-      title: pet
       type: object
       required:
         - name
         - photoUrls
+        - tags
       discriminator:
         propertyName: petType
         mapping:
@@ -1082,7 +1110,6 @@ components:
       xml:
         name: Pet
     Tag:
-      title: tag
       type: object
       properties:
         id:
@@ -1153,6 +1180,19 @@ components:
               - description: My Pet
                 title: Pettie
               - $ref: "#/components/schemas/Pet"
+          example:
+            category:
+              name: Great Dane
+              sub:
+                prop1: Just a test property
+            name: Pepper
+            photoUrls:
+              - https://assets.orvis.com/is/image/orvisprd/great-dane
+            tags:
+              - name: Great Danes
+            status: pending
+            petType:
+              huntingSkill: lazy
         application/xml:
           schema:
             type: "object"
@@ -1190,13 +1230,29 @@ components:
       type: apiKey
       name: api_key
       in: header
-  examples:
-    Order:
-      value:
-        quantity: 1
-        shipDate: "2018-10-19T16:46:45Z"
-        status: placed
-        complete: false
+    BasicAuth:
+      type: http
+      scheme: basic
+    BearerAuth:
+      type: http
+      scheme: bearer
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+    OpenID:
+      type: openIdConnect
+      openIdConnectUrl: https://example.com/.well-known/openid-configuration
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://example.com/oauth/authorize
+          tokenUrl: https://example.com/oauth/token
+          scopes:
+            read: Grants read access
+            write: Grants write access
+            admin: Grants access to admin operations
 x-webhooks:
   newPet:
     post:
