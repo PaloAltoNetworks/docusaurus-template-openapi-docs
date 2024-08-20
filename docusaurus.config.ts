@@ -38,6 +38,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          onInlineAuthors: "ignore",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

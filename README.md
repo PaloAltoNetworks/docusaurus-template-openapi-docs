@@ -1,11 +1,11 @@
 # Template
 
-This template is built for [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This template is built for [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ### Usage
 
 ```bash
-npx create-docusaurus@2.4.3 my-website --package-manager yarn
+npx create-docusaurus@3.5.2 my-website --package-manager yarn
 ```
 
 > When prompted to select a template choose `Git repository`.

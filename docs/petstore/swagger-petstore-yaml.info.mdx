@@ -36,7 +36,7 @@ import Export from "@theme/ApiExplorer/Export";
 
 <ApiLogo
   logo={{"url":"https://redocly.github.io/redoc/petstore-logo.png","altText":"Petstore logo"}}
-  darkLogo={undefined}
+  darkLogo={{"url":"/img/petstore-logo-dark.png","altText":"Petstore dark logo"}}
 >
   
 </ApiLogo>
@@ -70,6 +70,7 @@ All responses have a wildcard same-origin which makes them completely public and
 Petstore offers two forms of authentication:
   - API Key
   - OAuth2
+
 OAuth2 - an open protocol to allow secure authorization in a simple
 and standard method from web, mobile and desktop applications.
 
@@ -148,6 +149,155 @@ and standard method from web, mobile and desktop applications.
                 Header parameter name:
               </th><td>
                 api_key
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"HTTP: Basic Auth"}
+      value={"BasicAuth"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                http
+              </td>
+            </tr><tr>
+              <th>
+                HTTP Authorization Scheme:
+              </th><td>
+                basic
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"HTTP: Bearer Auth"}
+      value={"BearerAuth"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                http
+              </td>
+            </tr><tr>
+              <th>
+                HTTP Authorization Scheme:
+              </th><td>
+                bearer
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"API Key: ApiKeyAuth"}
+      value={"ApiKeyAuth"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                apiKey
+              </td>
+            </tr><tr>
+              <th>
+                Header parameter name:
+              </th><td>
+                X-API-Key
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"OpenID Connect: OpenID"}
+      value={"OpenID"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                openIdConnect
+              </td>
+            </tr><tr>
+              <th>
+                OpenID Connect URL:
+              </th><td>
+                https://example.com/.well-known/openid-configuration
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </TabItem><TabItem
+      label={"OAuth 2.0: OAuth2"}
+      value={"OAuth2"}
+    >
+      
+      
+      
+      
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                Security Scheme Type:
+              </th><td>
+                oauth2
+              </td>
+            </tr><tr>
+              <th>
+                OAuth Flow (authorizationCode):
+              </th><td>
+                <p>
+                  Token URL: https://example.com/oauth/token
+                </p><p>
+                  Authorization URL: https://example.com/oauth/authorize
+                </p><span>
+                  Scopes:
+                </span><ul>
+                  <li>
+                    read: Grants read access
+                  </li><li>
+                    write: Grants write access
+                  </li><li>
+                    admin: Grants access to admin operations
+                  </li>
+                </ul>
               </td>
             </tr>
           </tbody>

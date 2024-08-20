@@ -16,6 +16,12 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
+          id: "petstore/schemas/cat",
+          label: "Cat",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "petstore/add-pet",
           label: "Add a new pet to the store",
           className: "api-method post",
