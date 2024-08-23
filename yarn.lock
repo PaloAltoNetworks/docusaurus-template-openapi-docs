@@ -4004,10 +4004,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-plugin-openapi-docs@4.0.0, docusaurus-plugin-openapi-docs@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-4.0.0.tgz#190174fc35ffb608de4c0d6f100cc5fcdeac8547"
-  integrity sha512-CMiHVTJ7Xd39KxXf7VbSwWR4fwCEIDaXprZGlzdMAUKoi6LO3rjpLHmv4HPZPEOQpZJkQ+/FpPtL0+iEQN36yg==
+docusaurus-plugin-openapi-docs@4.0.1, docusaurus-plugin-openapi-docs@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-openapi-docs/-/docusaurus-plugin-openapi-docs-4.0.1.tgz#2c767cd7af363b24413f7249e85b26ac154d803a"
+  integrity sha512-ST0VLbRMTNz2O0NFIezWcF0dNYrGf34/oUmn3wH3hdMcStGQIOCEwD3JvuzyQ7WygjAR8md2kITHeRBRB2yhAA==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^11.5.4"
     "@docusaurus/plugin-content-docs" "^3.0.1"
@@ -4035,10 +4035,10 @@ docusaurus-plugin-sass@^0.2.3:
   dependencies:
     sass-loader "^10.1.1"
 
-docusaurus-theme-openapi-docs@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-4.0.0.tgz#c912d9924a4b52305d72d432a0679ef4d073a365"
-  integrity sha512-OqU0f+TQSgr8Xvr5GqgxOKvfqdWYE5kf6j3umGTTzPBTjMUXyGSJhZQJQSpIaXFszV8p+cVIj5O2LtMvAEMIhg==
+docusaurus-theme-openapi-docs@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-openapi-docs/-/docusaurus-theme-openapi-docs-4.0.1.tgz#fb10e9e253afa7d1012f47e73e9a89ab0e8121a5"
+  integrity sha512-4HIzYm2Y+pPiqvFs2oSEghtSgamza3Az1nGgwAJ+dpowfdOUafsGnbWOkJoFWVncRNn8/2mYSwrbUuo1t0kVUQ==
   dependencies:
     "@docusaurus/theme-common" "^3.0.1"
     "@hookform/error-message" "^2.0.1"
@@ -4046,7 +4046,7 @@ docusaurus-theme-openapi-docs@4.0.0:
     clsx "^1.1.1"
     copy-text-to-clipboard "^3.1.0"
     crypto-js "^4.1.1"
-    docusaurus-plugin-openapi-docs "^4.0.0"
+    docusaurus-plugin-openapi-docs "^4.0.1"
     docusaurus-plugin-sass "^0.2.3"
     file-saver "^2.0.5"
     lodash "^4.17.20"
