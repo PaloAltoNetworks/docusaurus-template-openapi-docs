@@ -48,22 +48,19 @@ import Translate from "@docusaurus/Translate";
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"petId","in":"path","description":"ID of pet that needs to be updated","required":true,"schema":{"type":"integer","format":"int64"}}]}
+  {...require("./update-pet-with-form.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{"content":{"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"name":{"description":"Updated name of the pet","type":"string"},"status":{"description":"Updated status of the pet","type":"string"}}}}}}}
+  {...require("./update-pet-with-form.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"405":{"description":"Invalid input"}}}
+  {...require("./update-pet-with-form.StatusCodes.json")}
 >
   
 </StatusCodes>

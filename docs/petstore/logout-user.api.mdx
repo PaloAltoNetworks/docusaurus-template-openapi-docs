@@ -46,16 +46,13 @@ import Translate from "@docusaurus/Translate";
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./logout-user.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"default":{"description":"successful operation"}}}
+  {...require("./logout-user.StatusCodes.json")}
 >
   
 </StatusCodes>

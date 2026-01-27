@@ -48,22 +48,19 @@ import Translate from "@docusaurus/Translate";
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"petId","in":"path","description":"ID of pet to update","required":true,"schema":{"type":"integer","format":"int64"}}]}
+  {...require("./upload-file.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{"content":{"application/octet-stream":{"schema":{"type":"string","format":"binary"}}}}}
+  {...require("./upload-file.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"integer","format":"int32"},"type":{"type":"string"},"message":{"type":"string"}},"title":"ApiResponse"}}}}}}
+  {...require("./upload-file.StatusCodes.json")}
 >
   
 </StatusCodes>

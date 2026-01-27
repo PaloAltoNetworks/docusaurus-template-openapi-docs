@@ -46,16 +46,13 @@ Returns a map of status codes to quantities
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./get-inventory.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"object","additionalProperties":{"type":"integer","format":"int32"}}}}}}}
+  {...require("./get-inventory.StatusCodes.json")}
 >
   
 </StatusCodes>

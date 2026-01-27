@@ -7,6 +7,10 @@ import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
+  future: {
+    experimental_faster: (process.env.DOCUSAURUS_FASTER ?? "true") === "true",
+    v4: true,
+  },
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: "https://your-docusaurus-test-site.com",

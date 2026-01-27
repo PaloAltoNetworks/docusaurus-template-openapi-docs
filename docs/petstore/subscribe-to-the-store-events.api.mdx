@@ -54,16 +54,13 @@ Add subscription for a store events
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"callbackUrl":{"type":"string","format":"uri","description":"This URL will be called by the server when the desired event will occur","example":"https://myserver.com/send/callback/here"},"eventName":{"type":"string","description":"Event name for the subscription","enum":["orderInProgress","orderShipped","orderDelivered"],"example":"orderInProgress"}},"required":["callbackUrl","eventName"]}}}}}
+  {...require("./subscribe-to-the-store-events.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"201":{"description":"Subscription added","content":{"application/json":{"schema":{"type":"object","properties":{"subscriptionId":{"type":"string","example":"AAA-123-BBB-456"}}}}}}}}
+  {...require("./subscribe-to-the-store-events.StatusCodes.json")}
 >
   
 </StatusCodes>
@@ -99,16 +96,13 @@ Add subscription for a store events
       A callback triggered every time an Order is updated status to "inProgress" (Description)
       
       <RequestSchema
-        title={"Body"}
-        body={{"content":{"application/json":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"},"timestamp":{"type":"string","format":"date-time","example":"2018-10-19T16:46:45Z"},"status":{"type":"string","example":"inProgress"}}}},"application/xml":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"}}},"example":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n  <orderId>123</orderId>\n  <status>inProgress</status>\n  <timestamp>2018-10-19T16:46:45Z</timestamp>\n</root>\n"}}}}
+        {...require("./subscribe-to-the-store-events.RequestSchema.2.json")}
       >
         
       </RequestSchema>
       
       <StatusCodes
-        id={"callbacks-responses"}
-        label={"Callbacks Responses"}
-        responses={{"200":{"description":"Callback successfully processed and no retries will be performed","content":{"application/json":{"schema":{"type":"object","properties":{"someProp":{"type":"string","example":"123"}}}}}},"299":{"description":"Response for cancelling subscription"},"500":{"description":"Callback processing failed and retries will be performed"}}}
+        {...require("./subscribe-to-the-store-events.StatusCodes.2.json")}
       >
         
       </StatusCodes>
@@ -131,16 +125,13 @@ Add subscription for a store events
       Order in Progress (Only Description)
       
       <RequestSchema
-        title={"Body"}
-        body={{"content":{"application/json":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"},"timestamp":{"type":"string","format":"date-time","example":"2018-10-19T16:46:45Z"},"status":{"type":"string","example":"inProgress"}}}},"application/xml":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"}}},"example":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n  <orderId>123</orderId>\n  <status>inProgress</status>\n  <timestamp>2018-10-19T16:46:45Z</timestamp>\n</root>\n"}}}}
+        {...require("./subscribe-to-the-store-events.RequestSchema.3.json")}
       >
         
       </RequestSchema>
       
       <StatusCodes
-        id={"callbacks-responses"}
-        label={"Callbacks Responses"}
-        responses={{"200":{"description":"Callback successfully processed and no retries will be performed","content":{"application/json":{"schema":{"type":"object","properties":{"someProp":{"type":"string","example":"123"}}}}}}}}
+        {...require("./subscribe-to-the-store-events.StatusCodes.3.json")}
       >
         
       </StatusCodes>
@@ -163,16 +154,13 @@ Add subscription for a store events
       A callback triggered every time an Order is shipped to the recipient
       
       <RequestSchema
-        title={"Body"}
-        body={{"content":{"application/json":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"},"timestamp":{"type":"string","format":"date-time","example":"2018-10-19T16:46:45Z"},"estimatedDeliveryDate":{"type":"string","format":"date-time","example":"2018-11-11T16:00:00Z"}}}}}}}
+        {...require("./subscribe-to-the-store-events.RequestSchema.4.json")}
       >
         
       </RequestSchema>
       
       <StatusCodes
-        id={"callbacks-responses"}
-        label={"Callbacks Responses"}
-        responses={{"200":{"description":"Callback successfully processed and no retries will be performed"}}}
+        {...require("./subscribe-to-the-store-events.StatusCodes.4.json")}
       >
         
       </StatusCodes>
@@ -195,16 +183,13 @@ Add subscription for a store events
       A callback triggered every time an Order is delivered to the recipient
       
       <RequestSchema
-        title={"Body"}
-        body={{"content":{"application/json":{"schema":{"type":"object","properties":{"orderId":{"type":"string","example":"123"},"timestamp":{"type":"string","format":"date-time","example":"2018-10-19T16:46:45Z"}}}}}}}
+        {...require("./subscribe-to-the-store-events.RequestSchema.5.json")}
       >
         
       </RequestSchema>
       
       <StatusCodes
-        id={"callbacks-responses"}
-        label={"Callbacks Responses"}
-        responses={{"200":{"description":"Callback successfully processed and no retries will be performed"}}}
+        {...require("./subscribe-to-the-store-events.StatusCodes.5.json")}
       >
         
       </StatusCodes>

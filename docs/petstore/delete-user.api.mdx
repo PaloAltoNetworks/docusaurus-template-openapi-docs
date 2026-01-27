@@ -48,22 +48,19 @@ This can only be done by the logged in user.
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"username","in":"path","description":"The name that needs to be deleted","required":true,"schema":{"type":"string"}}]}
+  {...require("./delete-user.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./delete-user.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"400":{"description":"Invalid username supplied"},"404":{"description":"User not found"}}}
+  {...require("./delete-user.StatusCodes.json")}
 >
   
 </StatusCodes>
